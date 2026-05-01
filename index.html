@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crush</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #7f1d1d, #111827);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      line-height: 1.75;
+      color: #e5e7eb;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .hero-list {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 24px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+
+    .card p {
+      margin: 0;
+      color: #d1d5db;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 14px 26px;
+      border-radius: 999px;
+      background: #dc2626;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ef4444;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 28px;
+      }
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p style="margin: 0; color: #60a5fa; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; font-size: 0.85rem;">crush</p>
+      <h1>Build the future of digital startup experiences.</h1>
+      <p>crush is a modern nology showcase designed to highlight innovation, product launches, and startup momentum with a clean and compelling landing page.</p>
+      <a class="button" href="#features">Explore features</a>
+    </header>
+
+    <section id="features" class="hero-list">
+      <article class="card">
+        <h2>Product Launch</h2>
+        <p>Showcase your latest products with crisp messaging, strong visuals, and a design that converts curious visitors into customers.</p>
+      </article>
+      <article class="card">
+        <h2>Innovative Design</h2>
+        <p>Minimal layout, bold typography, and a polished palette that keeps attention on what matters: your nology story.</p>
+      </article>
+      <article class="card">
+        <h2>Fast Performance</h2>
+        <p>Optimized for speed and compatibility, so your website feels smooth on every device and loads quickly for every visitor.</p>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
